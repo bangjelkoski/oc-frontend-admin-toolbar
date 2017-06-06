@@ -1,0 +1,32 @@
+<modification>
+   <id>Front End - Admin Toolbar</id>
+   <version>1.0</version>
+   <vqmver>2.5.1</vqmver>
+   <author>ABxWeb</author>
+   <file path="catalog/view/theme/*/template/common/" name="header.tpl">
+    <operation info="Adding Javascript/Stylesheet File to Header">
+         <search position="before"><![CDATA[</head>]]></search>
+         <add><![CDATA[
+			<script src="catalog/view/javascript/fe_tlb/fe_tlb.js" type="text/javascript"></script>
+			<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/fe_tlb.css" />
+			<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+                        ]]></add>
+    </operation>
+   </file>
+   <file path="catalog/controller/common/" name="footer.php">
+   <operation info="Rendering menu">
+    	<search position="before"><![CDATA[ 		$data['contact'] = $this->url->link('information/contact'); ]]> </search>
+    	<add><![CDATA[ 
+    	             $data['fe_tlb'] = $this->load->controller('module/fe_tlb');
+    	]]></add>
+   </operation>
+   </file>
+  <file path="catalog/view/theme/*/template/common/" name="footer.tpl">
+    <operation info="Adding Javascript/Stylesheet File to Header">
+         <search position="before"><![CDATA[<footer>]]></search>
+         <add><![CDATA[
+			<?php echo $fe_tlb; ?>
+                        ]]></add>
+    </operation>
+   </file>
+</modification>

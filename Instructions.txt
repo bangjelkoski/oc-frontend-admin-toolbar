@@ -1,0 +1,34 @@
+/***** Instalation *****/
+VQMOD REQUIRED!
+-------
+2.2 OPENCART VERSION
+1. You need to install this VQMOD Version otherwise it wont work!
+http://www.opencart.com/index.php?route=extension/extension/info&extension_id=22378
+2. Upload files in folder upload 2.2
+-------
+2.x - 2.2 OPENCART VERSION
+1. Install latest VQMod
+2. Upload files in folder upload 2.x - 2.2
+--------
+3. Go to Admin Panel (Dashboard), Extenstions > Modules. 
+4. Install the "Front End - Admin Panel Toolbar" module.
+5. Click on the "Edit" button on this module, and select your preffered settings.
+6. Enjoy!
+
+
+/***** Features *****/
+1. VQMOD doesnt edit any core opencart files.
+2. Can be easily translated. [language files included]
+3. Can choose from 3 styles.
+4. Can select which options to dislay.
+5. Can click to direcly open edit page for products/information/categories.
+6. Can direcly logout.
+7. Can direcly access Dashboard.
+8. Can enable/disable on mobile.
+
+/***** Upcoming ******/
+1. Direcly add new products/information/categories.
+2. More styles.
+
+Version 1.0
+ABxWeb.com
